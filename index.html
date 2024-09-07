@@ -80,6 +80,51 @@
             background: #e64a19;
         }
 
+        .services, .testimonials, .recent-events {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #00695c;
+        }
+
+        .service-item, .testimonial-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .service-item img, .testimonial-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .testimonial-item {
+            font-style: italic;
+            background: #f0f4f4;
+        }
+
+        .recent-events .event {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 0 auto 20px;
+            max-width: 300px;
+        }
+
+        .recent-events img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
         footer {
             background: #004d40;
             color: #fff;
@@ -117,6 +162,53 @@
                 <h2>Transformando Ideas en Eventos Inolvidables</h2>
                 <p>Con Proamzamora, cada evento es una experiencia única creada por Jesus Mora.</p>
                 <a href="eventos.html" class="cta-button">Ver Eventos</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="services">
+            <div class="section-title">Nuestros Servicios</div>
+            <div class="service-item">
+                <img src="service1.jpg" alt="Servicio 1">
+                <h3>Planificación Completa</h3>
+                <p>Nos encargamos de todos los detalles para que tu evento sea perfecto, desde la planificación hasta la ejecución.</p>
+            </div>
+            <div class="service-item">
+                <img src="service2.jpg" alt="Servicio 2">
+                <h3>Decoración Personalizada</h3>
+                <p>Creación de ambientes únicos que reflejan tu estilo y el tema de tu evento.</p>
+            </div>
+            <div class="service-item">
+                <img src="service3.jpg" alt="Servicio 3">
+                <h3>Gestión de Proveedores</h3>
+                <p>Nos encargamos de coordinar con los mejores proveedores para asegurar la calidad de cada aspecto de tu evento.</p>
+            </div>
+        </section>
+
+        <section id="testimonios" class="testimonials">
+            <div class="section-title">Testimonios</div>
+            <div class="testimonial-item">
+                <img src="client1.jpg" alt="Cliente 1">
+                <p>"Proamzamora hizo que nuestro evento fuera increíble. La atención al detalle y la dedicación del equipo fueron excepcionales."</p>
+                <p><strong>Maria López</strong></p>
+            </div>
+            <div class="testimonial-item">
+                <img src="client2.jpg" alt="Cliente 2">
+                <p>"¡El mejor organizador de eventos! Cada momento del evento estuvo perfectamente coordinado y todos nuestros invitados quedaron impresionados."</p>
+                <p><strong>Javier Martínez</strong></p>
+            </div>
+        </section>
+
+        <section id="eventos-recientes" class="recent-events">
+            <div class="section-title">Eventos Recientes</div>
+            <div class="event">
+                <img src="evento1.jpg" alt="Evento de Primavera">
+                <h3>Evento de Primavera</h3>
+                <p>Una celebración única para dar la bienvenida a la primavera con estilo.</p>
+            </div>
+            <div class="event">
+                <img src="cena.jpg" alt="Cena de Gala">
+                <h3>Cena de Gala</h3>
+                <p>Un evento elegante para disfrutar de una noche de lujo y sofisticación.</p>
             </div>
         </section>
     </main>
