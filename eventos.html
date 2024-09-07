@@ -4,7 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proamzamora - Eventos</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #0044cc;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .events {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .event-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .event {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: calc(50% - 20px);
+        }
+
+        .event img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .event h3 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+
+        .event a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #0044cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .event a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #0044cc;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer .contact-info a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,7 +137,6 @@
             <div class="container">
                 <h2>Eventos Recientes</h2>
                 <div class="event-list">
-                    <!-- Aquí puedes agregar eventos individuales -->
                     <article class="event">
                         <img src="evento1.jpg" alt="Evento de Primavera">
                         <h3>Evento de Primavera</h3>
