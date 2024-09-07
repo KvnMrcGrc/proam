@@ -244,14 +244,32 @@ form button:hover {
 footer {
     background: #004d40; /* Verde azulado oscuro */
     color: #fff;
-    padding: 1rem 0;
+    padding: 2rem 0; /* Aumentar el padding para hacer el footer más largo */
     text-align: center;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer p {
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
+
+footer .contact-info {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .contact-info a {
+    color: #80cbc4; /* Celeste */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer .contact-info a:hover {
+    color: #b2dfdb; /* Celeste más claro */
+}
+
 
 /* Estilos Responsivos */
 @media (max-width: 768px) {
@@ -351,10 +369,15 @@ footer p {
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Proamzamora. Todos los derechos reservados.</p>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Proamzamora. Todos los derechos reservados.</p>
+        <div class="contact-info">
+            <p>Reporte de problemas: <a href="mailto:tecmercadog@gmail.com">tecmercadog@gmail.com</a></p>
+            <p>Información para eventos: <a href="mailto:ejemplo@promzamora.com">ejemplo@promzamora.com</a> | Tel: 351-123-12-12</p>
         </div>
-    </footer>
+    </div>
+</footer>
+
 </body>
 </html>
