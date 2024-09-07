@@ -1,34 +1,40 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor centralizado */
 .container {
-    width: 80%;
+    width: 85%;
     margin: auto;
     overflow: hidden;
 }
 
+/* Estilos del header */
 header {
-    background: #333;
+    background: #111;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
 }
 
 header p {
-    margin: 0;
     font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 nav ul {
@@ -45,84 +51,162 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Estilos de la sección hero */
 .hero {
-    background: #e2e2e2;
-    padding: 2rem 0;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 0;
     text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h2 {
-    margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.events, .about, .contact {
-    padding: 2rem 0;
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
-.events .event-list {
+.cta-button {
+    background: #f39c12;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e67e22;
+}
+
+/* Estilos de la sección de eventos */
+.events {
+    padding: 4rem 0;
+}
+
+.events h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.event-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
 .event {
     background: #fff;
-    border: 1px solid #ddd;
     border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 1.5rem);
+    max-width: 400px;
+    text-align: center;
     padding: 1rem;
-    flex: 1 1 calc(50% - 1rem);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event img {
+    width: 100%;
+    height: auto;
 }
 
 .event h3 {
-    margin-top: 0;
+    margin: 1rem 0;
 }
 
 .event a {
-    color: #007BFF;
+    color: #f39c12;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .event a:hover {
-    text-decoration: underline;
+    color: #e67e22;
 }
 
-form {
+.event:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos de la sección sobre nosotros */
+.about {
+    background: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Estilos del formulario de contacto */
+.contact {
+    padding: 4rem 0;
+    background: #f4f4f4;
+}
+
+.contact form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 form label {
     display: block;
-    margin: 0.5rem 0;
+    margin-bottom: 0.5rem;
 }
 
 form input, form textarea {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.75rem;
     margin-bottom: 1rem;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
 form button {
-    background: #007BFF;
+    background: #f39c12;
     color: #fff;
     border: none;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
 }
 
 form button:hover {
-    background: #0056b3;
+    background: #e67e22;
 }
 
+/* Estilos del footer */
 footer {
-    background: #333;
+    background: #111;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
