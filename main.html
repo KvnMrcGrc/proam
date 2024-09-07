@@ -3,52 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <style>
-        /* Aquí puedes agregar estilos CSS si deseas */
-    </style>
+    <title>Proamzamora - Eventos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre">Sobre mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Proamzamora</h1>
+            <p>Organizador de Eventos - Jesus Mora</p>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#sobre">Sobre Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="inicio">
-        <h2>Inicio</h2>
-        <p>Esta es la sección de inicio de mi página web.</p>
-    </section>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Bienvenido a Proamzamora</h2>
+                <p>Descubre los eventos más destacados organizados por Jesus Mora.</p>
+            </div>
+        </section>
 
-    <section id="sobre">
-        <h2>Sobre mí</h2>
-        <p>Aquí puedes encontrar información sobre mí.</p>
-    </section>
+        <section id="eventos" class="events">
+            <div class="container">
+                <h2>Eventos Recientes</h2>
+                <div class="event-list">
+                    <!-- Aquí puedes agregar eventos individuales -->
+                    <article class="event">
+                        <h3>Evento de Primavera</h3>
+                        <p>Una celebración única para dar la bienvenida a la primavera.</p>
+                        <a href="#">Ver más</a>
+                    </article>
+                    <article class="event">
+                        <h3>Cena de Gala</h3>
+                        <p>Un evento elegante para disfrutar de una noche de lujo.</p>
+                        <a href="#">Ver más</a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través del siguiente formulario:</p>
-        <form action="/enviar-formulario" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        <section id="sobre" class="about">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                <p>Proamzamora es una empresa dedicada a la organización de eventos excepcionales. Fundada por Jesus Mora, nuestra misión es crear experiencias memorables para nuestros clientes.</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form action="enviar-formulario" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 Proamzamora. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
